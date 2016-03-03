@@ -9,10 +9,10 @@ Design and implement a web application that takes the data presented in products
 The web application should have the following features
 
 - Product grid
-- Filtering based on the data present in the JSON object
+- Filtering based on the data present in the JSON object (use Series and productType)
 - Individual item view
 - Side bar that includes filters for product categories.
-- Header and footer
+- Header and footer (use the current http://www.fender.com as guidance)
 - Style and layout should respond to mobile, tablet, and desktop
 
 ## Additional Info

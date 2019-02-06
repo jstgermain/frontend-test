@@ -2,21 +2,18 @@
 
 ## Description
 
-Design and implement a web application that takes the data presented in products.json in this repository, and displays the items as a grid of products. You may use any front end frameworks, libraries, and tools of your choice.
+This is the Fender Front End Engineering Challenge built on React with Docker. The challange is to design and implement a web application that takes the data presented in products.json in this repository, and displays the items as a grid of products. You may use any front end frameworks, libraries, and tools of your choice.
 
-## Requirements
+# Build webapp with react-docker
 
-The web application should have the following features
+## Build docker image
+`docker build . -t react-docker`
+## Run docker container
+`docker run -p 8462:80 react-docker` and Navigate to `http://localhost:8462/`
 
-- Product grid
-- Filtering based on the data present in the JSON object (use Series and productType)
-- Individual item view
-- Side bar that includes filters for product categories.
-- Header and footer (use the current http://www.fender.com as guidance)
-- Style and layout should respond to mobile, tablet, and desktop
+## Development server
 
-## Additional Info
+Run `yarn start` for a dev sever. Navigate to `http://localhost:3006/`. The app will automatically reload if you change any of the source files inside `app directory`.
 
-Please commit your code into a git repository, and show your work and process through those commits.
-
-Use best practices and methods, and show how you would structure not only the code but the way you would handle the development process in an ideal situation.
+## Build
+ * Run `yarn build` to build the project. The build artifacts will be stored in the `build/` directory.

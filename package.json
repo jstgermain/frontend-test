@@ -5,12 +5,24 @@
   "dependencies": {
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-scripts": "1.1.5"
+    "react-scripts": "^2.1.3"
   },
   "scripts": {
     "start": "PORT=3006 react-scripts start",
     "build": "PORT=3006 react-scripts build",
     "test": "PORT=3006 react-scripts test --env=jsdom",
     "eject": "PORT=3006 react-scripts eject"
-  }
+  },
+  "devDependencies": {
+    "css-loader": "^2.1.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

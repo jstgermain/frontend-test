@@ -7,6 +7,7 @@ export default class Card extends Component {
       className,
       cardlID,
       title,
+      link,
       image,
       defaultImage,
       text,
@@ -16,7 +17,13 @@ export default class Card extends Component {
       <div className={"card " + className} id={cardlID && cardlID + "-card"}>
         <div className="card--title">{title}</div>
         <div className="card--content">
-          <div className="card--content-image"><img src={image} onError={defaultImage} /></div>
+          <div className="card--content-image">
+            {link ? (
+              <a href={link}><img src={image} onError={defaultImage} /></a>
+            ) : (
+              <img src={image} onError={defaultImage} />
+            )}
+          </div>
           <div className="card--content-text">{text}</div>
         </div>
       </div>

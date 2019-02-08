@@ -1,0 +1,29 @@
+.flex-parent {
+  display: flex;
+
+  &.flex-direction-column {
+    flex-direction: column;
+  }
+
+  &.flex-direction-row {
+    flex-direction: row;
+  }
+
+  &.justify-content-center {
+    justify-content: center;
+  }
+
+  &.align-items-center {
+    justify-content: center;
+  }
+
+  &.flex-wrap-wrap {
+    flex-wrap: wrap;
+  }
+
+  @for $i from 1 through 12 {
+    .flex-#{$i} {
+      flex: $i;
+    }
+  }
+}

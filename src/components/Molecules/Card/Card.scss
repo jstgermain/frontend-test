@@ -1,0 +1,27 @@
+.card {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 16px;
+
+  .card--content {
+    background: #F5F5F5;
+    display: flex;
+    height: 500px;
+    width: 100%;
+
+    .card--content-image {
+      display: flex;
+      padding: 16px 32px;
+
+      a {
+        align-items: center;
+        display: flex;
+        max-width: 100%;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

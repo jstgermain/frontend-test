@@ -61,6 +61,38 @@ class Header extends Component {
                   </a>
                 </div>
                 <nav roll="navigation" className="global-header__nav visible--lg-up">
+                  <a activeclass="is-active" className="global-header__link" data-ember-action="" data-ember-action-823="823">
+                    PRODUCTS
+                    <span className="icon fdr-icon fdr-icon--triangle-down global-header__icon"></span>
+                  </a>
+                  <a activeclass="is-active" className="global-header__link visible--md-up" data-ember-action="" data-ember-action-825="825">
+                    CUSTOMIZE
+                    <span className="icon fdr-icon fdr-icon--triangle-down global-header__icon"></span>
+                  </a>
+                  <a href="https://shop.fender.com/en-US/dealers" className="global-header__link" data-ember-action="" data-ember-action-827="827">FIND A DEALER</a>
+                  <a href="https://www.fender.com/play/pages/annual-plan-special-offer?utm_source=fender&amp;utm_medium=banner-owned&amp;utm_campaign=evergreen20190201&amp;utm_content=featured_nav" className="global-header__link" data-ember-action="" data-ember-action-829="829">SPECIAL OFFER</a>
+                </nav>
+
+                <nav className="global-header__nav global-header__nav--right">
+                  <input type="text" placeholder="search" id="ember837" className="global-header__input input--cozy input--search visible--md-up capitalize ember-text-field ember-view" />
+                  <a className="global-header__link popover popover--carrot popover--carrot-center popover--tinted no-relative-position visible--sm-down">
+                    <span className="icon icon--large fdr-icon fdr-icon fdr-icon--search" data-ember-action="" data-ember-action-838="838"></span>
+                    <div className="popover__menu popover__menu--full no-border-top no-margin-top">
+                      <input type="text" placeholder="Search" id="ember839" className="input--search input--full no-border-bottom popover__input  ember-text-field ember-view" />
+                    </div>
+                  </a>
+                  <a className="global-header__link no-margin-right" data-ember-action="" data-ember-action-840="840">
+                    <div className="icon-badge">
+                    </div>
+                  </a>
+                  <a href="https://shop.fender.com/en-US/cart" className="icon icon--large fdr-icon fdr-icon--cart global-header__icon" data-ember-action="" data-ember-action-841="841"></a>
+                  <a className="global-header__link visible--md-down" data-ember-action="" data-ember-action-842="842">
+                    <div className="icon-mobile icon-mobile--comfy">
+                      <div className="icon-mobile__line"></div>
+                      <div className="icon-mobile__line"></div>
+                      <div className="icon-mobile__line"></div>
+                    </div>
+                  </a>
                 </nav>
               </div>
             </div>
@@ -72,3 +104,4 @@ class Header extends Component {
 Header = withRouter(Header);
 
 export default Header;
+

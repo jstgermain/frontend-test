@@ -1,5 +1,6 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import axios from 'axios';
+import { Card } from '../../components/Molecules';
 
 class StoreContainer extends Component {
   constructor(props) {
@@ -33,13 +34,14 @@ class StoreContainer extends Component {
   render() {
     const guitars = this.state.data.map((el, index) => {
       return <div key={index}>
-        <a href={'/product/?item=' + index}><img onError={this.addDefaultSrc} src={el.images[0]} /></a>
-        <p>productType - {el.index}</p>
+        <a href={'/product/?item=' + index}>
+          <Card image={el.images[0]} defaultImage={this.addDefaultSrc} />
+        </a>
       </div>
     });
 
     return <div>
-      <div>{guitars}</div>
+      <div className="flex-parent flex-wrap-wrap justify-content-center">{guitars}</div>
     </div>;
   }
 }

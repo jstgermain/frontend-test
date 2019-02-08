@@ -4,14 +4,15 @@ import { ProductContainer, StoreContainer } from "./containers";
 import logo from './docker.png';
 import './App.scss';
 
+import { Header } from "./components/Organisms";
+
+
 class App extends Component {
   render() {
     return (
       <Router>
         <div className="App">
-          <ul className="header">
-            <li><a href="/">Home</a></li>
-          </ul>
+          <Header />
           <div className="content" />
           <div>
             <Switch>
